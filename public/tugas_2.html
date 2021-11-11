@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1 {text-align: center;}
+    h1 {font-family: Arial, Helvetica, sans-serif;}
+    p {font-family: 'Times New Roman', Times, serif;}
+    p {text-align: justify;}
+    pre {font-family: 'Times New Roman', Times, serif;}
+    pre {text-align: justify;}
+    body{
+    background-image: linear-gradient(rgb(4, 0, 255), rgb(93, 134, 248));
+    color :rgb(255, 255, 255)
+    }
+    .border{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(image/border.png) 30 stretch;
+    }
+    .big{
+      line-height: 1.5;
+    }
+    .shadow {
+      text-shadow: 2px 2px 5px red;
+    }
+    a:link, a:visited {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    }
+    a:hover, a:active {
+    background-color: green;
+    color: rgb(238, 255, 0);
+    }
+    .list1 {
+    list-style-position: outside;
+    list-style-type: circle;
+    line-height: 1.5;
+    }
+    .list2{
+    list-style-position: outside;
+    list-style-type: square;
+    line-height: 1.5;
+    }
+    table, th, td {
+          border: 3px solid rgb(255, 255, 255);
+          text-align: center;
+        }
+    table {
+      border-collapse: collapse;
+      width: 40%;
+    }
+    th, td {
+      height: 30px;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:hover {background-color: rgb(255, 0, 0);}
+    div.ex1 {
+    max-width: 500px;
+    position: static;
+    margin: auto;
+    border: 3px solid #000000;
+    }
+    body {margin: 0;}
+
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    ul.topnav li {float: left;}
+
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+    ul.topnav li a.active {background-color: #04AA6D;}
+
+    ul.topnav li.right {float: right;}
+
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right,
+      ul.topnav li {float: none;}
+    }
+
+</style>
+<title>Halaman Profile Pribadi Raffi</title>
+</head>
+<body>
+  <ul class="topnav">
+    <li><a class="active" href="#profile">Profile</a></li>
+    <li><a href="#riwayat">Riwayat Pendidikan</a></li>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#hobby">Hobby</a></li>
+    <li><a href="#jadwal">Jadwal</a></li>
+    <li class="right"><a href="#contact">Contact</a></li>
+  </ul>
+    <h1 class ="shadow">Selamat Datang!</h1>
+    <hr>
+    <h2><center><b>Profil Biodata</b></center></h2>
+    <center><img src = "image/cupi-removebg-preview.png" width="200" height="300" class ="border"></center>
+    <div class="ex1" >
+    <ul class="list1" >
+        <li>Nama               : Muhammad Raffi Priyadiantama</li>
+        <li>TTL                : Jakarta, 23 Oktober 2001</li>
+        <li>Jenis Kelamin      : Laki-Laki</li>
+        <li>Usia               : 19 Tahun</li>
+        <li>Agama              : Islam</li>
+        <li>Pekerjaan          : Mahasiswa</li>
+    </ul>
+    </div>
+    <hr>
+    <h2><b><i>Riwayat Pendidikan</i></b></h2>
+    <p>
+    <ol class="list2" class="#News">
+        <li>SD Negeri 08 Pagi</li> (2008-2014)
+        <li>SMP Negeri 98 Jakarta</li> (2014-2017)
+        <li>SMA Negeri 109 Jakarta</li> (2017-2020) <u>Jurusan MIPA</u>
+        <li>Institut Teknologi Sepeluh Nopember</li> (2020-Sekarang) <u>Departemen Sistem Informasi</u>
+    </ol>
+    </p>
+    <hr>
+    <h3><strong>About Me!</strong></h3>
+        <pre class="big">
+            Saya adalah Mahasiswa S-1 Jurusan Sistem Informasi di <a href="https://www.its.ac.id/">Institut Teknologi Sepuluh Nopember</a>.
+            Saat ini saya sedang mengikuti sebuah kepanitiaan <a href="https://ise-its.com/">ISE! 2021</a> sebagai salah satu staff dari <a href="https://bionix.ise-its.com/">BIONIX</a>.
+        </pre>
+    <hr>
+    <h4> Hobby </h4>
+        <dl>
+            <dd>- Bulu Tangkis</dd>
+            <dd>- Renang</dd>
+            <dd>- Futsal</dd>
+        </dl>
+    <hr>
+    <h3>Jadwal Kuliah Selama Semester 3!</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>Senin</th>
+        <th>Selasa</th>
+        <th>Rabu</th>
+        <th>Kamis</th>
+        <th>Jumat</th>
+      </tr>
+      <tr>
+        <td>07:00 - 10.00</td>
+        <td></td>
+        <td></td>
+        <td>DMJK A</td>
+        <td>RO D</td>
+        <td>MPB C</td>
+      </tr>
+      <tr>
+        <td>10.15-12.45</td>
+        <td>SBD A</td>
+        <td>Statistika A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>13.00-15.30</td>
+        <td>MProsTI A</td>
+        <td></td>
+        <td>SBD A</td>
+        <td>PWEB A</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>15.45-18.15</td>
+        <td></td>
+        <td>MPB C</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </table>
+    <hr>
+    <h4> Contact Me </h4>
+<address>
+    Written by <strong>Muhammad Raffi Priyadiantama</strong>.<br>
+    Visit me on:
+    <p><a href="https://www.linkedin.com/in/raffi-priyadiantama-a470a0190/">Linkedln</a></p>
+    <p><a href="https://www.instagram.com/raffi_priyadiantama/">Instagram</a></p>
+    Jalan Delima 1 Komplek Mabad 1 Gang Apel No. 19 Srengseng Sawah, Jagakarsa, Jakarta Selatan <br>
+    Indonesia
+    </address>
+<p> +62 813 8587 3199</p>
+<bdo dir="tlr">Priyadiantama98@gmail.com</bdo>
+
+<hr>
+<center><span> ©2021 by Muhammad Raffi Priyadiantama</span></center>
+</body>
+</html>
+
+
