@@ -13,9 +13,17 @@ class ViewController extends Controller
         return view('showgreetings');
     }
 
-    function resultGreetings()
+    function showEts()
     {
         //code untuk meload data yg akan dimuat di form
-        return view('tugas');
+        return view('ets');
+    }
+
+    function showHtml(){
+        return view('tugas_php_html');
+    }
+
+    function showPhp(){
+        return view('glbb');
     }
 }
