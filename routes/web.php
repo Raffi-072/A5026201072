@@ -29,3 +29,4 @@ Route::post('isiannama', "ViewController@showForm");
 
 Route::get('htmlPhp', "ViewController@showHtml");
 Route::post('formPhp', "ViewController@showPhp");
+Route::post('formPhp2', "ViewController@showPhp2");
