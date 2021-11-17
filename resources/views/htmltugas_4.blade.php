@@ -75,7 +75,6 @@
             <button id="hide">Tampilkan</button>
             <div class="card-body" id="isi">
                 <div class="card-body">
-                    <form>
                         <div class="form-group">
                             <label for="g">Masukkan Gravitasi</label>
                             <input type="number" class="form-control" id="g" name="g">
@@ -93,20 +92,21 @@
                             <input type="number" class="form-control" id="s" name="s">
                         </div>
                         <button type="submit" class="btn btn-dark" id="hasil" onclick="result1();">Jumlah</button>
-                    </form>
                 </div>
             </div>
-
             <br>
             <div class="container bg-dark text-center text-white">
                 <h3 id="hasil"></h3>
             </div>
+        </div>
+    </div>
             <br>
+
+            <div class="container">
             <div class="card">
                 <div class="card-header">Tekanan Hidrostatis</div>
                 <button id="show">Tampilkan</button>
                 <div class="card-body" id="isii">
-                    <form>
                         <div class="form-group">
                             <label for="gravitasi">Masukkan Gravitasi</label>
                             <input type="number" class="form-control" id="gravitasi" name="gravitasi">
@@ -120,7 +120,6 @@
                             <input type="number" class="form-control" id="h" name="h">
                         </div>
                         <button type="submit" class="btn btn-dark" id="hasill" onclick="result();">Jumlah</button>
-                    </form>
                 </div>
                 <br>
                 <div class="container bg-dark text-center text-white">
@@ -128,8 +127,9 @@
                 </div>
             </div>
         </div>
-    </div>
+
 
 </body>
+
 
 </html>
