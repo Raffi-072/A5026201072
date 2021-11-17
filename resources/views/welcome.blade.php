@@ -94,7 +94,6 @@
                     <a href="praktikum_2">Praktikum 2</a>
                     <a href="ets">ETS</a>
                     <a href="htmlPhp">Tugas PHP</a>
-                    <a href="isiannama">Test</a>
                 </div>
             </div>
         </div>
