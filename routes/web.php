@@ -26,7 +26,7 @@ Route::get('praktikum_2', function () {
 Route::get('ets', "ViewController@showEts");
 
 //Route::get('isiannama', "ViewController@showForm");
-//Route::post('greetings', "ViewController@showForm");
+//Route::post('greetings', "ViewController@showForm2");
 
 Route::get('htmlPhp', "ViewController@showHtml");
 Route::post('formPhp', "ViewController@showPhp");
