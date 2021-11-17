@@ -70,6 +70,31 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Tekanan Hidrostatis</div>
+            <button id="show">Tampilkan</button>
+            <div class="card-body" id="isii">
+                <div class="card-body">
+                    <form action="formPhp2" method="post" onsubmit="return showPhp2()">
+                        @csrf
+                        <div class="form-group">
+                            <label for="gravitasi">Masukkan Gravitasi</label>
+                            <input type="number" class="form-control" id="gravitasi" name="gravitasi">
+                        </div>
+                        <div class="form-group">
+                            <label for="p">Masukkan Massa Jenis Zat Cair</label>
+                            <input type="number" class="form-control" id="p" name="p">
+                        </div>
+                        <div class="form-group">
+                            <label for="h">Masukkan Tinggi</label>
+                            <input type="number" class="form-control" id="h" name="h">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Jumlah</button>
+                    </form>
+                </div>
+            </div>
 </body>
 
 </html>
