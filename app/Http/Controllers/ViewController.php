@@ -26,4 +26,8 @@ class ViewController extends Controller
     function showPhp(){
         return view('glbb');
     }
+
+    function showPhp2(){
+        return view('hidro');
+    }
 }
