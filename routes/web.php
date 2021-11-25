@@ -33,6 +33,7 @@ Route::post('formPhp', "ViewController@showPhp");
 Route::post('formPhp2', "ViewController@showPhp2");
 
 //route CRUD
+
 Route::get('/pegawai','PegawaiController@index');
 Route::get('/pegawai/tambah','PegawaiController@tambah');
 Route::post('/pegawai/store','PegawaiController@store');
@@ -47,3 +48,4 @@ Route::post('/tugas/store','TugasController@store');
 Route::get('/tugas/edit/{id}','TugasController@edit');
 Route::post('/tugas/update','TugasController@update');
 Route::get('/tugas/hapus/{id}','TugasController@hapus');
+
