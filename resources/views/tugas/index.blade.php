@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tugas CRUD-Tugas</title>
+	<title>Tugas CRUD-Query Builder</title>
 </head>
 <body>
-
+	<h2>Tugas Query Builder</h2>
 	<h2>Data tugas</h2>
 
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
