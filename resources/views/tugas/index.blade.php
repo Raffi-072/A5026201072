@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
+	<title>Tugas CRUD-Tugas</title>
 </head>
 <body>
 
-	<h2>www.malasngoding.com</h2>
-	<h3>Data tugas</h3>
+	<h2>Data tugas</h2>
 
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
 
