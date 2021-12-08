@@ -10,7 +10,7 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table border="1" class="table text-center">
 		<tr>
             <th>ID</th>
 			<th>IDPegawai</th>
