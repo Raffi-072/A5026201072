@@ -15,11 +15,63 @@
     </script>
 </head>
 
-    <h3>@yield('judulhalaman')</h3>
+<body>
+    <div class="container">
+        <br>
+        <header>
+            <div>
+                <div>
+                    <img src="{{ URL::asset('/image/tamtam.png') }}" alt="foto raffi" width="100px">
+                </div>
+                <div>
+                    <h1>Muhammad Raffi Priyadiantama</h1>
+                </div>
+                <h1>5026201072</h1>
+            </div>
+        </header>
 
-    @section('konten') 
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <div>
+                    <h2>Tempat Navigasi</h2>
+                </div>
+                <div>
+                    <ul class="nav flex-column">
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/pegawai">Pegawai</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/absen">Absen</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/tugas">Tugas</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default disabled">Praktikum</a>
+                        </li>
 
-    @show
+                        <br>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-9" style=background-color:#f3eded>
+                <h3>@yield('judulhalaman')</h3>
+
+                @section('konten')
+
+                @show
+            </div>
+        </div>
+
+        <footer>
+            <center><span> ©2021 Hak Cipta Oleh 5026201073 - Muhammad Raffi Priyadiantama</span></center>
+        </footer>
+    </div>
 
 </body>
 
