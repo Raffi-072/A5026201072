@@ -15,17 +15,15 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: #f2f2f2">
     <div class="container">
         <br>
         <header>
-            <div style="align-item: center">
-                <div>
-                    <img src="{{ URL::asset('/image/tamtam.png') }}" alt="foto raffi" width="100px">
-                </div>
-                <div>
-                    <h1>Muhammad Raffi Priyadiantama</h1>
-                </div>
+            <div style="text-align: center;">
+                <img src="{{ URL::asset('/image/tamtam.png') }}" alt="foto raffi" width="100px">
+
+                <h1>Muhammad Raffi Priyadiantama</h1>
+
                 <h1>5026201072</h1>
             </div>
         </header>
@@ -33,33 +31,31 @@
         <div class="row">
             <div class="col-sm-3 text-center">
                 <div>
-                    <h2>Tempat Navigasi</h2>
+                    <h3>Menu</h3>
                 </div>
                 <div>
-                    <ul class="nav flex-column">
-                        <br>
+                    <ul class="nav nav-pills nav-justified flex-column">
                         <li class="nav-item">
-                            <a class="btn btn-default" href="/pegawai">Pegawai</a>
+                            <a class="btn btn-default nav-link" href="/pegawai">Pegawai</a>
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default" href="/absen">Absen</a>
+                            <a class="btn btn-default nav-link" href="/absen">Absen</a>
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default" href="/tugas">Tugas</a>
+                            <a class="btn btn-default nav-link" href="/tugas">Tugas</a>
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default disabled">Praktikum</a>
+                            <a class="btn btn-default nav-link disabled">Praktikum</a>
                         </li>
-
                         <br>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-sm-9" style=background-color:#f3eded>
+            <div class="col-sm-9 text-justify" style="background-color: #ffffff">
                 <h3>@yield('judulhalaman')</h3>
 
                 @section('konten')
