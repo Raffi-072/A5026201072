@@ -19,7 +19,7 @@
     <div class="container">
         <br>
         <header>
-            <div>
+            <div style="align-item: center">
                 <div>
                     <img src="{{ URL::asset('/image/tamtam.png') }}" alt="foto raffi" width="100px">
                 </div>
