@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas CRUD-Query Builder</title>
-</head>
-<body>
-	<h2>Tugas Query Builder</h2>
-	<h2>Data tugas</h2>
+@extends('layout.bahagia')
+
+@section('title','Tugas CRUD-Query Builder')
+@section('judulhalaman','Data Tugas')
+
+@section('konten')
 
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
 
@@ -39,4 +37,5 @@
 
 
 </body>
-</html>
+
+@endsection
