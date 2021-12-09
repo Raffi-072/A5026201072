@@ -12,7 +12,12 @@ class TugasController extends Controller
     {
         //DB::table('')->get();
         // mengambil data dari table pegawai
-        $tugas = DB::table('tugas')->get(); //hasil get adalah array of object [object][]
+        //$tugas = DB::table('tugas')->get(); //hasil get adalah array of object [object][]
+
+        $tugas = DB::table('tugas')
+        ->join('pegawai', 'tugas.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('tugas.*', 'pegawai.pegawai_nama')
+        ->paginate();
 
         // mengirim data pegawai ke view index
         return view('tugas.index', ['tugas' => $tugas]); //teknik komunikasi atau passing value antara controller dan view
@@ -21,15 +26,17 @@ class TugasController extends Controller
 
     public function tambah()
     {
+
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get(); //defaultnya urut Primary Key
         // memanggil view tambah
-        return view('tugas.tambah');
+        return view('tugas.tambah', ['pegawai' => $pegawai]);
     }
 
     public function store(Request $request)
     {
         // insert data ke table pegawai
         DB::table('tugas')->insert([
-            'IDPegawai' => $request->id_pegawai,
+            'IDPegawai' => $request->idpegawai,
             'Tanggal' => $request->tanggal,
             'NamaTugas' => $request->nama_tugas,
             'Status' => $request->status
@@ -40,10 +47,16 @@ class TugasController extends Controller
 
     public function edit($id)
     {
-        // mengambil data pegawai berdasarkan id yang dipilih
+        // mengambil data absen berdasarkan id yang dipilih
         $tugas = DB::table('tugas')->where('ID', $id)->get();
-        // passing data pegawai yang didapat ke view edit.blade.php
-        return view('tugas.edit', ['tugas' => $tugas]);
+
+        // mengambil data dari table pegawai
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get(); //defaultnya urut Primary Key
+
+
+        // passing data absen yang didapat ke view update.blade.php
+        return view('tugas.edit', ['tugas' => $tugas, 'pegawai' => $pegawai]);
+
     }
 
     // update data pegawai

@@ -13,7 +13,7 @@
 	<table border="1" class="table text-center">
 		<tr>
             <th>ID</th>
-			<th>IDPegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>NamaTugas</th>
 			<th>Status</th>
@@ -22,7 +22,7 @@
 		@foreach($tugas as $t)
 		<tr>
             <td>{{ $t->ID }}</td>
-			<td>{{ $t->IDPegawai }}</td>
+			<td>{{ $t->pegawai_nama }}</td>
 			<td>{{ $t->Tanggal }}</td>
 			<td>{{ $t->NamaTugas }}</td>
 			<td>{{ $t->Status }}</td>
@@ -35,6 +35,7 @@
 		@endforeach
 	</table>
 
+    {{ $tugas->links() }}
 
 </body>
 

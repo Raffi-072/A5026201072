@@ -48,7 +48,7 @@
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default nav-link disabled">Praktikum</a>
+                            <a class="btn btn-default nav-link disabled">Agen</a>
                         </li>
                         <br>
                     </ul>
@@ -63,7 +63,8 @@
                 @show
             </div>
         </div>
-
+        <br>
+        <br>
         <footer>
             <center><span> ©2021 Hak Cipta Oleh 5026201073 - Muhammad Raffi Priyadiantama</span></center>
         </footer>

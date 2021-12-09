@@ -1,22 +1,27 @@
 @extends('layout.bahagia')
 
-@section('title','Tugas CRUD-Query Builder')
-@section('judulhalaman','Menambah Data Tugas')
+@section('title', 'Tugas CRUD-Query Builder')
+@section('judulhalaman', 'Menambah Data Tugas')
 
 @section('konten')
 
-	<a href="/tugas"> Kembali</a>
+    <a href="/tugas"> Kembali</a>
 
-	<br/>
-	<br/>
+    <br />
+    <br />
 
-	<form action="/tugas/store" method="post">
-		{{ csrf_field() }}
-		IDPegawai <input type="number" name="id_pegawai" required="required"> <br/>
+    <form action="/tugas/store" method="post">
+        {{ csrf_field() }}
+        IDPegawai <select name="idpegawai">
+            @foreach ($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}">{{ $p->pegawai_nama }}</option>
+            @endforeach
+        </select>
+        <br>
         <div class="form-group">
             <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
             <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
-                <input type='text' class="form-control" name="tanggal" required="required"/>
+                <input type='text' class="form-control" name="tanggal" required="required" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -33,11 +38,11 @@
             });
         </script>
 
-		NamaTugas <input type="text" name="nama_tugas" required="required"> <br/>
-		Status <input type="text" name="status" required="required" pattern="[A-Za-z]{1}" placeholder="Y/N"><br/>
-		<input type="submit" value="Simpan Data">
-	</form>
+        NamaTugas <input type="text" name="nama_tugas" required="required"> <br />
+        Status <input type="text" name="status" required="required" pattern="[A-Za-z]{1}" placeholder="Y/N"><br />
+        <input type="submit" value="Simpan Data">
+    </form>
 
-</body>
+    </body>
 
 @endsection
