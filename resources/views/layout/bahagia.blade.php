@@ -48,7 +48,7 @@
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default nav-link disabled">Agen</a>
+                            <a class="btn btn-default nav-link" href="/agen">Agen</a>
                         </li>
                         <br>
                     </ul>

@@ -57,3 +57,13 @@ Route::post('/absen/store', 'AbsenController@store');
 Route::get('/absen/edit/{id}', 'AbsenController@edit');
 Route::post('/absen/update', 'AbsenController@update');
 Route::get('/absen/hapus/{id}', 'AbsenController@hapus');
+
+//route CRUD Agen
+Route::get('/agen', 'AgenController@index');
+Route::get('/agen/tambah', 'AgenController@tambah');
+Route::post('/agen/store', 'AgenController@store');
+Route::get('/agen/edit/{id}', 'AgenController@edit');
+Route::post('/agen/update', 'AgenController@update');
+Route::get('/agen/hapus/{id}', 'AgenController@hapus');
+Route::get('/agen/cari', 'AgenController@cari');
+Route::get('/agen/view/{id}', 'AgenController@detail');
