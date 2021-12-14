@@ -5,24 +5,31 @@
 
 @section('konten')
 
-    <a href="/Agen"> Kembali</a>
+    <a href="/agen"> Kembali</a>
 
     <br />
     <br />
 
-    <table border="1" class="table text-center">
-        <tr>
-            <th>Nama Agen</th>
-            <th>Jumlah Agen</th>
-            <th>Tersedia</th>
-        </tr>
-        @foreach ($agen as $a)
-            <tr>
-                <td>{{ $a->namaagen }}</td>
-                <td>{{ $a->jumlahagen }}</td>
-                <td>{{ $a->tersedia }}</td>
-            </tr>
-        @endforeach
-    </table>
+    @foreach ($agen as $a)
+        <br>
+        <div>
+            <label for="namaagen">Nama Agen</label>
+            <p>{{ $a->namaagen }}
+            <p>
+        </div>
+
+        <div>
+            <label for="jumlahagen">Jumlah Agen</label>
+            <p>{{ $a->jumlahagen }}
+            <p>
+        </div>
+
+        <div>
+            <label for="tersedia">Tersedia</label>
+            <p>{{ $a->tersedia }}
+            <p>
+        </div>
+
+    @endforeach
 
 @endsection

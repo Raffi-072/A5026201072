@@ -25,7 +25,4 @@
 	</form>
 	@endforeach
 
-
-</body>
-
 @endsection
