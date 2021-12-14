@@ -7,8 +7,8 @@
 
     <a href="/agen"> Kembali</a>
 
-    <br />
-    <br />
+    <br/>
+    <br/>
 
     @foreach ($agen as $a)
         <br>
