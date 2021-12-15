@@ -51,6 +51,10 @@
                             <a class="btn btn-default nav-link" href="/agen">Agen</a>
                         </li>
                         <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default nav-link" href="/keranjangbelanja">EAS</a>
+                        </li>
+                        <br>
                     </ul>
                 </div>
             </div>

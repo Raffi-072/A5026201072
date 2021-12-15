@@ -67,3 +67,10 @@ Route::post('/agen/update', 'AgenController@update');
 Route::get('/agen/hapus/{id}', 'AgenController@hapus');
 Route::get('/agen/cari', 'AgenController@cari');
 Route::get('/agen/view/{id}', 'AgenController@detail');
+
+//route CRUD Agen
+Route::get('/keranjangbelanja', 'BelanjaController@index');
+Route::get('/keranjangbelanja/tambah', 'BelanjaController@tambah');
+Route::post('/keranjangbelanja/store', 'BelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}', 'BelanjaController@hapus');
+
